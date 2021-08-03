@@ -1,8 +1,21 @@
 
 
-# Welcome To <_Hacker News/_>
-## About Hacker News (clone)
 
+# Welcome To <_Hacker News/_>
+``
+## Testing Environment Running Ubuntu 18 
+docker.coinsoft.co.za:5555/
+
+## SSH Access to server 
+ssh root@docker.coinsoft.co.za -p 6666
+password: Kunfucool24 
+
+## Mysql Database Access 
+docker.coinsoft.co.za:5555/phpmyadmin 
+Username: Admin
+password: Kungfucool24 
+
+## About Hacker News
 Hacker News Clone is a web application that periodically fetches the latest news items using the hacker
 news API. The application does the following: 
 
@@ -19,36 +32,10 @@ news API. The application does the following:
 ## Project Setup
 
 Follow the below steps to set up the project:
-## Database Migrations
+- Clone the repository into your server
+- Run Composer install
 
-The Items table has been divided into multiple tables. Upon these tables relationships have been setup based on the API and noticeable relationships. Below are the migrations available to run using the command 
-### _php artisan migrate_
-### Database Migrations
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+## Important Information to note
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+A cron job is running in the development server deployed on docker which is triggering the functions that are collecting data from the API. This
